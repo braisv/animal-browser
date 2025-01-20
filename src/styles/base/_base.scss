@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $default-font-size-desktop;
+  font-family: Arial,sans-serif;
+  font-weight: 400;
+
+  @include respond(tab-land) {
+    font-size: $default-font-size-land;
+  }
+  @include respond(tab-port) {
+    font-size: $default-font-size-port;
+  }
+  @include respond(phone) {
+    font-size: $default-font-size-phone;
+  }
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

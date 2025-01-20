@@ -1,0 +1,43 @@
+{
+  "name": "animal-browser",
+  "version": "1.0.0",
+  "description": "this is an animal browser",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "test",
+    "build": "tsc --project tsconfig.json && npm start",
+    "start": "node server.js",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src/**/*.ts src/**/*.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braisv/animal-browser.git"
+  },
+  "keywords": [
+    "animal-browser",
+    "react",
+    "js"
+  ],
+  "author": "braisv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braisv/animal-browser/issues"
+  },
+  "homepage": "https://github.com/braisv/animal-browser#readme",
+  "dependencies": {
+    "@types/react": "^18.2.35",
+    "@types/react-dom": "^18.2.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.7",
+    "esbuild": "0.20.2",
+    "esbuild-sass-plugin": "3.2.0",
+    "esbuild-server": "^0.3.0",
+    "sass": "1.72.0",
+    "sass-loader": "14.1.1",
+    "typescript": "^5.2.2"
+  }
+}
