@@ -1,6 +1,8 @@
 const esbuild = require("esbuild-server");
 const cssPlugin = require("./esbuild.css.plugin");
 const { sassPlugin } = require("esbuild-sass-plugin");
+const svgPlugin = require("esbuild-svg");
+const svgrConfig = { exportType: "named" };
 
 const server = esbuild.createServer(
   {
@@ -9,10 +11,10 @@ const server = esbuild.createServer(
     minify: true,
     sourcemap: true,
     outdir: "public",
-    plugins: [cssPlugin, sassPlugin()],
+    plugins: [cssPlugin, sassPlugin(), svgPlugin(svgrConfig)],
     loader: {
-      ".ttf": "file",
-      ".json": "file",
+      ".svg": "file",
+      ".png": "dataurl",
     },
     external: [],
   },

@@ -1,3 +1,19 @@
 .app-container {
     background-color: $background;
 }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 72px;
+    width: 100vw;
+    overflow: hidden;
+    border-bottom: 1px solid $color-secondary;
+    display: grid;
+    margin-top: -20px;
+}
+
+.icon {
+    fill: $font-color;
+}

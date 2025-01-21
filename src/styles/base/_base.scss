@@ -10,6 +10,7 @@ html {
   font-size: $default-font-size-desktop;
   font-family: Arial,sans-serif;
   font-weight: 400;
+  color: $font-color;
 
   @include respond(tab-land) {
     font-size: $default-font-size-land;

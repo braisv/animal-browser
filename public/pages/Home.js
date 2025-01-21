@@ -3,10 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Header_1 = __importDefault(require("#/components/Header/Header"));
 const react_1 = __importDefault(require("react"));
-const App = () => {
-    return (react_1.default.createElement("div", { className: "app-container" },
-        react_1.default.createElement(Header_1.default, null)));
+const Header_1 = __importDefault(require("#/components/Header/Header"));
+const Home = () => {
+    return (react_1.default.createElement(Header_1.default, null));
 };
-exports.default = App;
+exports.default = Home;

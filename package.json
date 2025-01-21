@@ -33,9 +33,10 @@
   },
   "devDependencies": {
     "@types/node-sass": "^4.11.7",
-    "esbuild": "0.20.2",
-    "esbuild-sass-plugin": "3.2.0",
+    "esbuild": "0.23.0",
+    "esbuild-sass-plugin": "3.3.1",
     "esbuild-server": "^0.3.0",
+    "esbuild-svg": "^1.0.3",
     "sass": "1.72.0",
     "sass-loader": "14.1.1",
     "typescript": "^5.2.2"
