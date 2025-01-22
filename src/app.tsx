@@ -1,11 +1,12 @@
-import Header from '#/components/Header/Header';
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { router } from '#/routes';
 
 const App = (): JSX.Element => {
     return (
-        <div className="app-container">
-            <Header />
-        </div>
+        <RouterProvider
+            router={router}
+        />
     );
 }
 

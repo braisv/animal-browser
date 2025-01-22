@@ -1,5 +1,8 @@
 .app-container {
     background-color: $background;
+    min-height: 100vh;
+    position: relative;
+    padding: 82px;
 }
 
 .header {
@@ -9,9 +12,22 @@
     height: 72px;
     width: 100vw;
     overflow: hidden;
-    border-bottom: 1px solid $color-secondary;
+    border-bottom: 1px solid $color-primary;
     display: grid;
     margin-top: -20px;
+}
+
+.footer {
+    background-color: $color-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .icon {
