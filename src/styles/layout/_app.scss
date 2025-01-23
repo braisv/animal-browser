@@ -2,7 +2,6 @@
     background-color: $background;
     min-height: 100vh;
     position: relative;
-    padding: 82px;
 }
 
 .header {
@@ -13,7 +12,6 @@
     width: 100vw;
     overflow: hidden;
     border-bottom: 1px solid $color-primary;
-    display: grid;
     margin-top: -20px;
 }
 
@@ -32,4 +30,13 @@
 
 .icon {
     fill: $font-color;
+}
+
+.home {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 40px;
 }

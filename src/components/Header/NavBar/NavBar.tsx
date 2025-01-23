@@ -1,13 +1,17 @@
 import React from 'react'
-import { ReactComponent as AppsIcon } from '../../../assets/icons/apps.svg';
-import Text from '#/components/Typography/Text';
+import { ReactComponent as AppsIcon } from '../../../assets/svg/apps.svg';
+import { useLocation } from 'react-router-dom';
+import GoogleLogo from '#/components/Logo/GoogleLogo';
+import Title from '#/components/Header/NavBar/Title';
 
 const NavBar = () => {
+    const { pathname } = useLocation()
+    const isHome = pathname === '/'
+    console.log({ isHome })
     return (
         <nav className='navbar'>
             <div className='navbar--left'>
-                <Text text='Agile Content' bold />
-                <Text text='Frontend Test' />
+                {isHome ? <Title /> : <GoogleLogo />}
             </div>
             <div className='navbar--right'>
                 <AppsIcon
