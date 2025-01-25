@@ -33,6 +33,7 @@
     "react-router-dom": "^6.28.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
     "@types/node-sass": "^4.11.7",
     "esbuild": "0.23.0",
     "esbuild-sass-plugin": "3.3.1",

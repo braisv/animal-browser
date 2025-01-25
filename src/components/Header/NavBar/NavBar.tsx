@@ -1,17 +1,17 @@
 import React from 'react'
 import { ReactComponent as AppsIcon } from '../../../assets/svg/apps.svg';
-import { useLocation } from 'react-router-dom';
-import GoogleLogo from '#/components/Logo/GoogleLogo';
 import Title from '#/components/Header/NavBar/Title';
+import SearchForm from '#/components/SearchForm/SearchForm';
+import { isHome } from '#/helpers/utils';
+import { faker } from '@faker-js/faker';
+
+const randomAvatar = faker.image.avatar();
 
 const NavBar = () => {
-    const { pathname } = useLocation()
-    const isHome = pathname === '/'
-    console.log({ isHome })
     return (
         <nav className='navbar'>
             <div className='navbar--left'>
-                {isHome ? <Title /> : <GoogleLogo />}
+                {isHome() ? <Title /> : <SearchForm />}
             </div>
             <div className='navbar--right'>
                 <AppsIcon
@@ -19,8 +19,7 @@ const NavBar = () => {
                     height='24px'
                     width='24px'
                 />
-                <div className="avatar">
-                </div>
+                <img src={randomAvatar} alt="Avatar" className="avatar" />
             </div>
         </nav>
     )

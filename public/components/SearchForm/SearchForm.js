@@ -3,11 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Text_1 = __importDefault(require("#/components/Typography/Text"));
+const GoogleLogo_1 = __importDefault(require("#/components/Logo/GoogleLogo"));
+const Form_1 = __importDefault(require("#/components/SearchForm/Form"));
 const react_1 = __importDefault(require("react"));
-const Title = () => {
+const SearchForm = () => {
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(Text_1.default, { text: 'Agile Content', bold: true }),
-        react_1.default.createElement(Text_1.default, { text: 'Frontend Test' })));
+        react_1.default.createElement(GoogleLogo_1.default, null),
+        react_1.default.createElement(Form_1.default, null)));
 };
-exports.default = Title;
+exports.default = SearchForm;

@@ -1,4 +1,8 @@
 .logo {
     margin: 0 auto;
     display: block;
+
+    &--small {
+        margin: 0;
+    }
 }
