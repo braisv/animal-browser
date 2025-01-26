@@ -15,7 +15,7 @@
 
 .input {
     margin-top: 6px;
-    border: 1px solid #dfe1e5;
+    border: 1px solid $color-secondary;
     display: flex;
     position: relative;
     min-height: 44px;
@@ -40,7 +40,7 @@
 .input--icon {
     width: 20px;
     height: 20px;
-    fill: #9aa0a6;
+    fill: $color-primary;
     margin: 0 14px;
 
     &:not(:first-child) {
@@ -62,7 +62,6 @@
     margin-top: 29px;
     border: none;
     border-radius: 4px;
-    font-family: Arial,sans-serif;
     font-size: 14px;
     padding: 0 16px;
     line-height: 27px;

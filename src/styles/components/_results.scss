@@ -1,0 +1,94 @@
+.loading {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+    width: 100%;
+    margin-bottom: 48px;
+
+    div {
+        background-color: $color-secondary;
+    }
+
+    &--bar-1 {
+        height: 18px;
+        width: 30%;
+    }
+
+    &--bar-2 {
+        width: 50%;
+        height: 30px;
+    }
+
+    &--bar-3 {
+        height: 20px;
+        width: 80%;
+    }
+}
+
+.results {
+    display: flex;
+    grid-gap: 40px;
+    flex: 3;
+
+    .list-item {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 6px;
+        list-style: none;
+        margin-bottom: 40px;
+        max-width: 80vw;
+
+        @include respond(tab-port) {
+            max-width: 100vw;
+          }
+    }
+}
+
+.selected-item {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 6px;
+    border: 1px solid $color-secondary;
+    padding: 12px;
+    border-radius: 8px;
+    height: fit-content;
+    width: 100%;
+    background-color: $background;
+
+    @include respond(tab-port) {
+        border: none;
+        border-radius: 0;
+        height: fit-content;
+        width: 100%;
+        background-color: $background;
+      }
+    
+    &--container {
+        width: 100%;
+        max-width: 20vw;
+
+          @include respond(tab-port) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba($color: #000000, $alpha: .30);
+            max-width: 100vw;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    }
+
+}
+
+.no-selected-item {
+    width: 100%;
+    max-width: 20vw;
+
+    @include respond(tab-port) {
+        display: none;
+      }
+}

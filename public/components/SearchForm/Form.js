@@ -50,8 +50,15 @@ const Form = () => {
     const onChange = () => {
         setInputValue(inputRef.current?.value ?? inputValue);
     };
+    const onClear = () => {
+        if (inputRef.current) {
+            setInputValue('');
+            inputRef.current.value = '';
+            inputRef.current?.focus();
+        }
+    };
     (0, react_1.useEffect)(() => {
-        if ((0, utils_1.isHome)()) {
+        if (!inputText) {
             inputRef.current?.focus();
         }
     }, []);
@@ -59,7 +66,7 @@ const Form = () => {
         react_1.default.createElement("div", { className: "input" },
             react_1.default.createElement(search_svg_1.ReactComponent, { className: "input--icon" }),
             react_1.default.createElement("input", { className: 'input--box', type: "text", ref: inputRef, defaultValue: inputValue, onChange: onChange }),
-            inputRef.current?.value && react_1.default.createElement(clear_svg_1.ReactComponent, { className: "input--icon" })),
-        (0, utils_1.isHome)() && react_1.default.createElement("button", { className: "button", type: "submit" }, "Buscar")));
+            inputValue && react_1.default.createElement(clear_svg_1.ReactComponent, { className: "input--icon", onClick: onClear })),
+        (0, utils_1.isHome)() && react_1.default.createElement("button", { className: "button", type: "submit", disabled: !inputValue }, "Buscar")));
 };
 exports.default = Form;
