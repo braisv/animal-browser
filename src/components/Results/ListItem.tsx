@@ -1,6 +1,6 @@
-import Text from '#/components/Typography/Text'
-import { AnimalListItem } from '#/types'
-import React from 'react'
+import Text from '@/components/Typography/Text';
+import { AnimalListItem } from '@/types';
+import React from 'react';
 
 const ListItem = ({ id, title, description, url, cb }: AnimalListItem) => {
     return (
@@ -11,7 +11,7 @@ const ListItem = ({ id, title, description, url, cb }: AnimalListItem) => {
             </div>
             <Text text={description} />
         </li>
-    )
-}
+    );
+};
 
-export default ListItem
+export default ListItem;

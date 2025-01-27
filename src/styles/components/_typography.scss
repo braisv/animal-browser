@@ -1,29 +1,29 @@
 .typography {
-    &--small {
-        font-size: $small-font-size-desktop;
-      
-        @include respond(tab-land) {
-          font-size: $small-font-size-land;
-        }
-        @include respond(tab-port) {
-          font-size: $small-font-size-port;
-        }
-        @include respond(phone) {
-          font-size: $small-font-size-phone;
-        }
-    }
+  &--small {
+    font-size: $small-font-size-desktop;
 
-    &--big {
-        font-size: $big-font-size-desktop;
-      
-        @include respond(tab-land) {
-          font-size: $big-font-size-land;
-        }
-        @include respond(tab-port) {
-          font-size: $big-font-size-port;
-        }
-        @include respond(phone) {
-          font-size: $big-font-size-phone;
-        }
+    @include respond(tab-land) {
+      font-size: $small-font-size-land;
     }
+    @include respond(tab-port) {
+      font-size: $small-font-size-port;
+    }
+    @include respond(phone) {
+      font-size: $small-font-size-phone;
+    }
+  }
+
+  &--big {
+    font-size: $big-font-size-desktop;
+
+    @include respond(tab-land) {
+      font-size: $big-font-size-land;
+    }
+    @include respond(tab-port) {
+      font-size: $big-font-size-port;
+    }
+    @include respond(phone) {
+      font-size: $big-font-size-phone;
+    }
+  }
 }

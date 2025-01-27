@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const googleLogo_svg_1 = require("../../assets/svg/googleLogo.svg");
-const utils_1 = require("#/helpers/utils");
+const utils_1 = require("@/helpers/utils");
 const GoogleLogo = () => {
     const className = `logo ${(0, utils_1.isHome)() ? '' : 'logo--small'}`;
     const viewBox = (0, utils_1.isHome)() ? '' : '0 0 285 75';

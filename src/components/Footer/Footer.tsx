@@ -1,5 +1,5 @@
-import Text from '#/components/Typography/Text'
-import React from 'react'
+import Text from '@/components/Typography/Text';
+import React from 'react';
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             <Text text='ⓒ Google 2021' />
             <Text text='version: 0.1.0' />
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

@@ -37,7 +37,7 @@ const react_1 = __importStar(require("react"));
 const search_svg_1 = require("../../assets/svg/search.svg");
 const clear_svg_1 = require("../../assets/svg/clear.svg");
 const react_router_dom_1 = require("react-router-dom");
-const utils_1 = require("#/helpers/utils");
+const utils_1 = require("@/helpers/utils");
 const Form = () => {
     const navigate = (0, react_router_dom_1.useNavigate)();
     const { inputText } = (0, react_router_dom_1.useParams)();

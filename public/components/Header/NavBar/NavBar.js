@@ -5,9 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const apps_svg_1 = require("../../../assets/svg/apps.svg");
-const Title_1 = __importDefault(require("#/components/Header/NavBar/Title"));
-const SearchForm_1 = __importDefault(require("#/components/SearchForm/SearchForm"));
-const utils_1 = require("#/helpers/utils");
+const Title_1 = __importDefault(require("@/components/Header/NavBar/Title"));
+const SearchForm_1 = __importDefault(require("@/components/SearchForm/SearchForm"));
+const utils_1 = require("@/helpers/utils");
 const faker_1 = require("@faker-js/faker");
 const randomAvatar = faker_1.faker.image.avatar();
 const NavBar = () => {

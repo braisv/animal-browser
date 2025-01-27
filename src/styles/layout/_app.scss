@@ -1,59 +1,59 @@
 .app-container {
-    background-color: $background;
-    min-height: 100vh;
-    position: relative;
+  background-color: $background;
+  min-height: 100vh;
+  position: relative;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 72px;
-    width: 100vw;
-    overflow: hidden;
-    border-bottom: 1px solid $color-secondary;
-    margin-top: -20px;
-    background-color: $background;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 72px;
+  width: 100vw;
+  overflow: hidden;
+  border-bottom: 1px solid $color-secondary;
+  margin-top: -20px;
+  background-color: $background;
 }
 
 .footer {
-    background-color: $color-secondary;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: $color-secondary;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .icon {
-    fill: $font-color;
+  fill: $font-color;
 }
 
 .home {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 40px;
 }
 
 .search {
-    padding: 100px 80px;
-    max-width: 2000px;
-    margin: 0 auto;
+  padding: 100px 80px;
+  max-width: 2000px;
+  margin: 0 auto;
 
-    @include respond(tab-land) {
-        padding: 80px 50px;
-      }
-      @include respond(tab-port) {
-        padding: 80px 45px;
-      }
-      @include respond(phone) {
-        padding: 80px 30px;
-      }
+  @include respond(tab-land) {
+    padding: 80px 50px;
+  }
+  @include respond(tab-port) {
+    padding: 80px 45px;
+  }
+  @include respond(phone) {
+    padding: 80px 30px;
+  }
 }

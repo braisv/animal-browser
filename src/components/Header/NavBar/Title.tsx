@@ -1,5 +1,5 @@
-import Text from '#/components/Typography/Text'
-import React from 'react'
+import Text from '@/components/Typography/Text';
+import React from 'react';
 
 const Title = () => {
     return (
@@ -7,7 +7,7 @@ const Title = () => {
             <Text text='Agile Content' bold />
             <Text text='Frontend Test' />
         </>
-    )
-}
+    );
+};
 
-export default Title
+export default Title;

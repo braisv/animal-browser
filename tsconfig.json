@@ -19,14 +19,14 @@
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "strictNullChecks": true,
+    "baseUrl": "src",
     "paths": {
-      "#/*": ["./src/*"],
-      "cmp/*": ["./src/components/*"],
-      "pg/*": ["./src/pages/*"],
+      "@/*": ["*"]
     },
     "resolveJsonModule": true,
-    "allowJs": true,
+    "allowJs": true
   },
   "include": ["src", "custom.d.ts"],
-  "exclude": ["**/node_modules", "**/.*/"]
+  "exclude": ["**/node_modules", "**/.*/"],
+  "types": ["node", "jest", "@testing-library/jest-dom"]
 }
