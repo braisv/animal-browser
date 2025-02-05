@@ -55,7 +55,9 @@ const Results = () => {
     const loadAnimalList = (0, react_1.useCallback)(() => {
         if (inputText && inputText in faker_1.faker.animal) {
             const fakerAnimal = faker_1.faker.animal;
-            const animals = faker_1.faker.helpers.multiple(() => fakerAnimal[inputText](), { count: 20 });
+            const animals = faker_1.faker.helpers.multiple(() => fakerAnimal[inputText](), {
+                count: 20,
+            });
             const data = animals.map((item, index) => {
                 const animalData = {
                     id: index + 1,
@@ -64,10 +66,10 @@ const Results = () => {
                     description: getText(),
                     image: getImage(inputText),
                 };
-                return ({
+                return {
                     ...animalData,
-                    cb: () => setSelectedItem(animalData)
-                });
+                    cb: () => setSelectedItem(animalData),
+                };
             });
             setListItems(data || []);
         }

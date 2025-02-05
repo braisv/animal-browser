@@ -26,12 +26,12 @@ const routes = [
             {
                 path: 'search/:inputText',
                 element: react_1.default.createElement(Search_1.default, null),
-            }
-        ]
+            },
+        ],
     },
     {
         path: '/*',
         element: react_1.default.createElement(NotFound_1.default, null),
-    }
+    },
 ];
 exports.router = (0, react_router_dom_1.createHashRouter)(routes);

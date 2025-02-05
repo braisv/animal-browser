@@ -63,10 +63,10 @@ const Form = () => {
         }
     }, []);
     return (react_1.default.createElement("form", { className: `form ${(0, utils_1.isHome)() ? '' : 'form--small'}`, onSubmit: onSubmit },
-        react_1.default.createElement("div", { className: "input" },
-            react_1.default.createElement(search_svg_1.ReactComponent, { className: "input--icon" }),
-            react_1.default.createElement("input", { className: 'input--box', type: "text", ref: inputRef, defaultValue: inputValue, onChange: onChange }),
-            inputValue && react_1.default.createElement(clear_svg_1.ReactComponent, { className: "input--icon", onClick: onClear })),
-        (0, utils_1.isHome)() && react_1.default.createElement("button", { className: "button", type: "submit", disabled: !inputValue }, "Buscar")));
+        react_1.default.createElement("div", { className: 'input' },
+            react_1.default.createElement(search_svg_1.ReactComponent, { className: 'input--icon' }),
+            react_1.default.createElement("input", { className: 'input--box', type: 'text', ref: inputRef, defaultValue: inputValue, onChange: onChange }),
+            inputValue && react_1.default.createElement(clear_svg_1.ReactComponent, { className: 'input--icon', onClick: onClear })),
+        (0, utils_1.isHome)() && (react_1.default.createElement("button", { className: 'button', type: 'submit', disabled: !inputValue }, "Buscar"))));
 };
 exports.default = Form;

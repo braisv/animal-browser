@@ -5,6 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(require("react"));
 const NotFound = () => {
-    return (react_1.default.createElement("div", null, "Not Found"));
+    return react_1.default.createElement("div", null, "Page not found");
 };
 exports.default = NotFound;

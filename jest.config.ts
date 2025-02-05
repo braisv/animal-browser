@@ -5,8 +5,8 @@ export default {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   roots: ['src'],
-  moduleNameWrapper: {
-    '^@/(.*)$': ['*'],
+  moduleNameMapper: {
+    '^@/(.*)$': ['<rootDir>/src/$1'],
   },
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   slowTestThreshold: 6,

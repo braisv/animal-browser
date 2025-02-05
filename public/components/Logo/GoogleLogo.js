@@ -12,6 +12,6 @@ const GoogleLogo = () => {
     const height = (0, utils_1.isHome)() ? 92 : 32;
     const width = (0, utils_1.isHome)() ? 272 : 92;
     const props = { className, viewBox, height, width };
-    return (react_1.default.createElement(googleLogo_svg_1.ReactComponent, { ...props }));
+    return react_1.default.createElement(googleLogo_svg_1.ReactComponent, { ...props });
 };
 exports.default = GoogleLogo;

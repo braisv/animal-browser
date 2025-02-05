@@ -15,6 +15,6 @@ const NavBar = () => {
         react_1.default.createElement("div", { className: 'navbar--left' }, (0, utils_1.isHome)() ? react_1.default.createElement(Title_1.default, null) : react_1.default.createElement(SearchForm_1.default, null)),
         react_1.default.createElement("div", { className: 'navbar--right' },
             react_1.default.createElement(apps_svg_1.ReactComponent, { className: 'icon', height: '24px', width: '24px' }),
-            react_1.default.createElement("img", { src: randomAvatar, alt: "Avatar", className: "avatar" }))));
+            react_1.default.createElement("img", { src: randomAvatar, alt: 'Avatar', className: 'avatar' }))));
 };
 exports.default = NavBar;
